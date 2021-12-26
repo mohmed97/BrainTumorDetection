@@ -9,17 +9,7 @@
 <body>
     <div class="container">
         <div class="Pjname p-3 mb-2 text-white">
-            <h1 class="display-2 text-center">Brain Tumor Detection</h1>
-            
-            <ul class="nav nav-pills nav-div">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Documentation</a>
-                </li>
-            </ul>
-            
+            <h1 class="display-2 text-center">Brain Tumor Detection</h1>            
         </div>
         <div class="form-div">
             <p class="display-6 text-white text-center">
@@ -29,15 +19,15 @@
                 <form method="POST" action="http://127.0.0.1:5000/uploader" enctype="multipart/form-data">
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Full Name</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">Age</label>
-                      <input type="text" class="form-control" id="exampleInputPassword1">
+                      <input type="text" class="form-control" id="exampleInputPassword1" required>
                     </div>
                     <div class="mb-3">
                         <label for="formFile" class="form-label text-white">MRI Image</label>
-                        <input class="form-control" type="file" id="formFile" name="MRI_IMG" >
+                        <input class="form-control" type="file" id="formFile" name="MRI_IMG" required>
                     </div>
                     <!-- onchange="readURL(this);" -->
                     <!-- <img id="blah" src="#" alt="your image" /> -->

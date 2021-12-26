@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body
+        {
+            background-color: #192444;
+            color: #FFF;
+        }
+        .img
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        .row{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .info{
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/66bfcf3c53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row rline">
+            <img class="img col-lg-4" src="{{ url_for('static', filename= 'img/nora.jpg') }}" alt="" >            
+            <div class="col-lg-6 info">
+                <h2>Nourhan Selim Salem</h2>
+                <p>AI Engineer <br> Postgraduate 9-months professional training program in Machine
+                    Learning and Artificial Intelligence powered by EPITA . <br>
+                    <a href="https://github.com/nourhan-selim-salem">
+                        <i class="fab fa-github" style="margin: 5px 5px 0px 0px;font-size:30px;color: #FFF;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nourhan-selim/">
+                        <i class="fab fa-linkedin" style="margin: 5px 5px 0px 0px;font-size:30px;color: #FFF;"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row rline">
+            <div class="col-lg-6 info">
+                <h2>Hesham Hammam Ali</h2>
+                <p>AI Engineer <br> Postgraduate 9-months professional training program in Machine
+                    Learning and Artificial Intelligence powered by EPITA . <br>
+                    <a href="https://github.com/mohmed97">
+                        <i class="fab fa-github" style="margin: 5px 5px 0px 0px;font-size:30px;color: #FFF;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohamed-ahmed-gomaa/">
+                        <i class="fab fa-linkedin" style="margin: 5px 5px 0px 0px;font-size:30px;color: #FFF;"></i>
+                    </a>
+                </p>
+            </div>
+            <img class="img col-lg-4" src="{{ url_for('static', filename= 'img/hesham.jpg') }}" alt="">            
+        </div>
+        <hr>
+        <div class="row">
+            <img class="img col-lg-4" src="{{ url_for('static', filename= 'img/bendo.jpg') }}" alt="" >
+            <div class="col-lg-6 info">
+                <h2>Abdelhamid Reda Abdelhamid</h2>
+                <p>AI Engineer <br> Postgraduate 9-months professional training program in Machine
+                    Learning and Artificial Intelligence powered by EPITA . <br>
+                    <a href="https://github.com/mohmed97">
+                        <i class="fab fa-github" style="margin: 5px 5px 0px 0px;font-size:30px;color: #FFF;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohamed-ahmed-gomaa/">
+                        <i class="fab fa-linkedin" style="margin: 5px 5px 0px 0px;font-size:30px;color: #FFF;"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row rline">
+            <div class="col-lg-6 info">
+                <h2>Amr Salah</h2>
+                <p>AI Engineer <br> Postgraduate 9-months professional training program in Machine
+                    Learning and Artificial Intelligence powered by EPITA . <br>
+                    <a href="https://github.com/mohmed97">
+                        <i class="fab fa-github" style="margin: 5px 5px 0px 0px;font-size:30px;color: #FFF;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohamed-ahmed-gomaa/">
+                        <i class="fab fa-linkedin" style="margin: 5px 5px 0px 0px;font-size:30px;color: #FFF;"></i>
+                    </a>
+                </p>
+            </div>
+            <img class="img col-lg-4" src="{{ url_for('static', filename= 'img/amr.jpg') }}" alt="" >            
+        </div>
+        <hr>
+        <div class="row">
+            <img class="img col-lg-4" src="{{ url_for('static', filename= 'img/shoaib.jpg') }}" alt="">
+            <div class="col-lg-6 info">
+                <h2>Mohamed Reda Shoaib</h2>
+                <p>AI Engineer <br> Postgraduate 9-months professional training program in Machine
+                    Learning and Artificial Intelligence powered by EPITA . <br>
+                    <a href="https://github.com/mohmed97">
+                        <i class="fab fa-github" style="margin: 5px 5px 0px 0px;font-size:30px;color: #FFF;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohamed-ahmed-gomaa/">
+                        <i class="fab fa-linkedin" style="margin: 5px 5px 0px 0px;font-size:30px;color: #FFF;"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- <div class="col-lg-1"></div> -->
+            <div class="col-lg-6 info">
+                <h2>Mohamed Ahmed Gomaa</h2>
+                <p>AI Engineer <br> Postgraduate 9-months professional training program in Machine
+                    Learning and Artificial Intelligence powered by EPITA . <br>
+                    <a href="https://github.com/mohmed97">
+                        <i class="fab fa-github" style="margin: 5px 5px 0px 0px;font-size:30px;color: #FFF;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohamed-ahmed-gomaa/">
+                        <i class="fab fa-linkedin" style="margin: 5px 5px 0px 0px;font-size:30px;color: #FFF;"></i>
+                    </a>
+                </p>
+            </div>
+            <img class="img col-lg-3" src="{{ url_for('static', filename= 'img/ana.jpg') }}" alt="">
+        </div> 
+    </div>
+</body>
+</html>
