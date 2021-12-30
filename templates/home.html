@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Tumor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+  <header>
+        <nav class="navbar navbar-expand-md nav-div">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Brain Tumor Detection</a>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/predict">Predict</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main style="margin-top: 25px">
+     <div class="container">
+        <div class="Pjname p-3 mb-2 text-white">
+            <h1 class="display-2 text-center">Brain Tumor Detection</h1>
+        </div>
+        <div class="form-div">
+            <p class="display-6 text-white text-center">
+                Please Fill this form and attach your MRI Image.
+            </p>
+            <div class="form text-white">
+                <form method="POST" action="http://127.0.0.1:5000/uploader" enctype="multipart/form-data">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Age</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label text-white">MRI Image</label>
+                        <input class="form-control" type="file" id="formFile" name="MRI_IMG" required>
+                    </div>
+                    <!-- onchange="readURL(this);" -->
+                    <!-- <img id="blah" src="#" alt="your image" /> -->
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-lg btn-outline-primary">Submit</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+
+    </div>
+    </main>
+
+</body>
+</html>
