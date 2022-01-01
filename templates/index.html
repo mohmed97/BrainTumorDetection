@@ -7,7 +7,8 @@
     <!-- <link href="../static/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/styleCards.css') }}">
+    <title>Brain Tumor Detection</title>
 </head>
 <body>
     <header>
@@ -22,6 +23,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -44,7 +48,7 @@
                             <img src="{{ url_for('static', filename= 'img/doc1.jpg') }}" alt="" >     
                         </div>
                         <div class="container">
-                        <div class="carousel-caption text-start">
+                        <div class="carousel-caption text-start" style="color: #FFF;">
                             <h1>Symptoms of a brain tumour</h1>
                             <p>The symptoms of a brain tumour vary depending on the exact part of the brain affected.</p>
                             <p>Common symptoms include:(Headaches, Seizures, Vision or Speech problems and Progressive weakness).</p>
@@ -69,7 +73,7 @@
                         </div>
                         <div class="container">
                         <div class="carousel-caption text-start">
-                            <h1>quick reassurance</h1>
+                            <h1>Quick Reassurance</h1>
                             <p>Be more reassured before the appointment of your doctor, and find out the results of your x-rays here.</p>
                         </div>
                         </div>
@@ -85,6 +89,26 @@
                 </button>
             </div>
         </div>
+        
+        <div class="contact-items">
+            <div class="customer-care">
+                <h3>Giloma</h3>
+                <p>Gliomas are brain tumours that start in glial cells. These are the supporting cells of the brain and the spinal cord. The most common type is called astrocytoma.</p>
+                <a href='https://www.cancerresearchuk.org/about-cancer/brain-tumours/types/glioma-adults'><button id="cust-care">More about Giloma</button></a>
+            </div>
+            <div class="write-us">
+                <h3>Meningioma</h3>
+                <p> Meningiomas are tumours that start in the layers of tissue (meninges) that cover the brain and spinal cord. Most meningiomas are benign.</p>
+               <a href="https://www.cancerresearchuk.org/about-cancer/brain-tumours/types/meningioma"> <button id="write">More about Meningioma</button></a>
+            </div>
+            <div class="sales-market">
+                <h3> Pituitary tumours tumours</h3>
+                <p>The pituitary gland makes and releases hormones into the bloodstream. Most pituitary tumours are benign. Benign pituitary gland tumours are also called pituitary adenomas.</p>
+                 <a href="https://www.cancerresearchuk.org/about-cancer/brain-tumours/types/pituitary-tumours"> <button id="sales">More about Pituitary</button></a>
+
+            </div>
+        </div>
+    </div>
 
     </main>
     <script src="{{ url_for('static', filename= 'js/bootstrap.bundle.min.js') }}"></script>

@@ -3,33 +3,56 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-   <!-- <title> Responsive Contact Us Form  | CodingLab </title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Contact Us Form  | CodingLab </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css') }}">
+{#    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">#}
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/styleContact.css') }}">
+    <script src="https://kit.fontawesome.com/66bfcf3c53.js" crossorigin="anonymous"></script>
    </head>
 <body>
+
+ <header>
+        <nav class="navbar navbar-expand-md fixed-top nav-div">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Brain Tumor Detection</a>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/predict">Predict</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+ </header>
+ <main style="margin-top: 100px">
   <div class="container">
     <div class="content">
       <div class="left-side">
         <div class="address details">
           <i class="fas fa-map-marker-alt"></i>
           <div class="topic">Address</div>
-          <div class="text-one">Surkhet, NP12</div>
-          <div class="text-two">Birendranagar 06</div>
+          <div class="text-one">Cairo, Egypt</div>
+          <div class="text-two">Nasr City</div>
         </div>
         <div class="phone details">
           <i class="fas fa-phone-alt"></i>
           <div class="topic">Phone</div>
-          <div class="text-one">+0098 9893 5647</div>
-          <div class="text-two">+0096 3434 5678</div>
+          <div class="text-one">+20 1124545040</div>
+          <div class="text-two">+20 1144327922</div>
         </div>
         <div class="email details">
           <i class="fas fa-envelope"></i>
           <div class="topic">Email</div>
-          <div class="text-one">codinglab@gmail.com</div>
-          <div class="text-two">info.codinglab@gmail.com</div>
+          <div class="text-one">Braintumor@gmail.com</div>
+          <div class="text-two">info.Braintumor@gmail.com</div>
         </div>
       </div>
       <div class="right-side">
@@ -43,7 +66,9 @@
           <input type="text" placeholder="Enter your email">
         </div>
         <div class="input-box message-box">
-
+          <textarea placeholder="Enter your message"></textarea>
+<!--          <label >Enter your massage</label>-->
+<!--          <textare class="form-control" id="exampleFormControlTextarea1" placeholder="Enter your massage" style="height: 100%" rows="7"></textare>-->
         </div>
         <div class="button">
           <input type="button" value="Send Now" >
@@ -52,5 +77,6 @@
     </div>
     </div>
   </div>
+ </main>
 </body>
 </html>
